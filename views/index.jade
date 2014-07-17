@@ -5,7 +5,7 @@ block content
 		#mw-page-base.noprint
 		#mw-head-base.noprint
 		#content.mw-body
-				a#top
+			a#top
 				h1#firstHeading.firstHeading
 					span(dir="auto")| #{subdomain}pedia
 				#bodyContent
@@ -18,70 +18,84 @@ block content
 						p Questions? Email the webmaster.
 					span.mw-headline Getting Started
 						| Consult the User's Guide for #{title}
-		#printfooter
-			| Retrieved from blah
-		#p-personal
-			h5 Personal tools
-		#left-navigation
-			#p-namespaces.vectorTabs
-				h5 Namespaces
-				ul
-					li#ca-nstab-main.selected Page
-					li#ca-talk.new Discussion
-			#p-variants.vectorMenu.emptyPortlet
-				.menu
-					ul
-		#right-navigation
-			#p-views.vectorTabs
-				h5 Views
-					ul
-						li#ca-view.selected Read
-						li#ca-viewsource View source
-						li#ca-history.collapsible View history
-			#p-cactions.vectorMenu.emptyPortlet
-				h5
-					span Actions
-						.menu
-							ul
-			#p-search
-				h5
-					label(for="searchInput") Search
-					form#searchform
-		#mw-panel.noprint
+			#printfooter
+				#catlinks.catlinks.catlinks-allhidden
+				.visualClear
 
-		#portal.p-navigation
-			h5 Navigation
-				.body
+		#mw-head.noprint
+			#p-personal
+				h5 Personal tools
+			#left-navigation
+				#p-namespaces.vectorTabs
+					h5 Namespaces
 					ul
-						li 
-							a Main Page
-						li 
-							a Community portal
-						li 
-							a Current events
-						li 
-							a Recent changes
-						li 
-							a Random page
-						li 
-							a Help
-		#portal.p-tb
-			h5 Toolbox
-				.body
-					ul
-						li
-							a#t-whatlinkshere What links here
-						li
-							a Related changes
-						li
-							a Special pages
-						li
-							a Printable version
-						li
-							a Permanent link
+						li#ca-nstab-main.selected 
+							span
+								a Page
+						li#ca-talk.new 
+							span
+								a Discussion
+				#p-variants.vectorMenu.emptyPortlet
+					.menu
+						ul
+			#right-navigation
+				#p-views.vectorTabs
+					h5 Views
+						ul
+							li#ca-view.selected 
+								span
+									a Read
+							li#ca-viewsource 
+								span
+									a View source
+							li#ca-history.collapsible 
+								span
+									a View history
+				#p-cactions.vectorMenu.emptyPortlet
+					h5
+						span Actions
+							.menu
+								ul
+				#p-search
+					h5
+						label(for="searchInput") Search
+						form#searchform
+		#mw-panel.noprint
+			#p-logo
+				a(style="background-image: url(http://www.opensourcecms.com/adesign/i/opensource-cms-icon.png);", href="#")
+
+			#portal.p-navigation
+				h5 Navigation
+					.body
+						ul
+							li 
+								a Main Page
+							li 
+								a Community portal
+							li 
+								a Current events
+							li 
+								a Recent changes
+							li 
+								a Random page
+							li 
+								a Help
+			#portal.p-tb
+				h5 Toolbox
+					.body
+						ul
+							li
+								a#t-whatlinkshere What links here
+							li
+								a Related changes
+							li
+								a Special pages
+							li
+								a Printable version
+							li
+								a Permanent link
 
 		#footer
 			ul#footer-info
-				li This page was last modified
-				li This page has been accessed many times
-			
+				li This page was last modified #{datetime}
+				li This page has been accessed #{randnum} times
