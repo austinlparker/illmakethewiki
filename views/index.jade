@@ -5,19 +5,22 @@ block content
 		#mw-page-base.noprint
 		#mw-head-base.noprint
 		#content.mw-body
-			a#top
-				h1#firstHeading.firstHeading
-					span(dir="auto")| #{subdomain}pedia
-				#bodyContent
-					#siteSub From MediaWiki Demo
-					#contentSub Nothing
-					#jump-to-nav.mw-jump
-						| Jump to: navigation
-					#mw-content-text.mw-content-ltr
-						p Welcome to #{subdomain}pedia, the free wiki about #{subdomain} that anybody can edit.
-						p Questions? Email the webmaster.
+			h1#firstHeading.firstHeading
+				span(dir="auto")| #{subdomain}pedia
+			#bodyContent
+				#siteSub From MediaWiki Demo
+				#contentSub Nothing
+				#jump-to-nav.mw-jump
+					| Jump to: navigation
+				#mw-content-text.mw-content-ltr
+					p Welcome to #{subdomain}pedia, the free wiki about #{subdomain} that anybody can edit.
+				h2
 					span.mw-headline Getting Started
-						| Consult the User's Guide for #{title}
+				ul
+					li
+						a Talk to someone about #{subdomain}
+					li
+						a(href="owned.html") Get more information about #{subdomain}pedia
 			#printfooter
 				#catlinks.catlinks.catlinks-allhidden
 				.visualClear
@@ -66,34 +69,34 @@ block content
 
 			#portal.p-navigation
 				h5 Navigation
-					.body
-						ul
-							li 
-								a Main Page
-							li 
-								a Community portal
-							li 
-								a Current events
-							li 
-								a Recent changes
-							li 
-								a Random page
-							li 
-								a Help
+				.body
+					ul
+						li#n-mainpage-description 
+							a Main Page
+						li
+							a Community portal
+						li 
+							a Current events
+						li 
+							a Recent changes
+						li 
+							a Random page
+						li 
+							a Help
 			#portal.p-tb
 				h5 Toolbox
-					.body
-						ul
-							li
-								a#t-whatlinkshere What links here
-							li
-								a Related changes
-							li
-								a Special pages
-							li
-								a Printable version
-							li
-								a Permanent link
+				.body
+					ul
+						li
+							a#t-whatlinkshere What links here
+						li
+							a Related changes
+						li
+							a Special pages
+						li
+							a Printable version
+						li
+							a Permanent link
 
 		#footer
 			ul#footer-info
